@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import pytest
 
 class GildedRose(object):
 

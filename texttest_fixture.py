@@ -3,6 +3,8 @@ from __future__ import print_function
 
 from gilded_rose import *
 
+import pytest
+
 if __name__ == "__main__":
     print ("OMGHAI!")
     items = [
