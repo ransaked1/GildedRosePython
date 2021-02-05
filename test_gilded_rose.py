@@ -11,6 +11,12 @@ class GildedRoseTest(unittest.TestCase):
         gilded_rose.update_quality()
         self.assertEquals("foo", items[0].name)'''
 
+    def test_StandardItemStandardBehaviourQualityDecreaseBy1(self):
+        items = [Item("Elixir of the Mongoose", 6, 7)]
+        gilded_rose = GildedRose(items)
+        gilded_rose.update_quality()
+        self.assertEquals(6, items[0].quality)
+
     def test_StandardItemSellByDatePassedQualityDecreaseBy2(self):
         items = [Item("Elixir of the Mongoose", -1, 7)]
         gilded_rose = GildedRose(items)
@@ -71,6 +77,17 @@ class GildedRoseTest(unittest.TestCase):
         gilded_rose.update_quality()
         self.assertEquals(0, items[0].quality)
 
+    def test_ConjuredItemStandardBehaviourQualityDecreaseBy2(self):
+        items = [Item("Conjured Mana Cake", 3, 6)]
+        gilded_rose = GildedRose(items)
+        gilded_rose.update_quality()
+        self.assertEquals(4, items[0].quality)
+
+    def test_ConjuredItemSellByDatePassedQualityDecreaseBy4(self):
+        items = [Item("Conjured Mana Cake", -1, 6)]
+        gilded_rose = GildedRose(items)
+        gilded_rose.update_quality()
+        self.assertEquals(2, items[0].quality)
 
 if __name__ == '__main__':
     unittest.main()
