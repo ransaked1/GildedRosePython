@@ -20,7 +20,7 @@ def update_item(item):
             item.quality = decreaseQualityBy2(item)
 
     if itemNotBrieCheck(item) and itemNotBackstagePassCheck(item):
-        if quaityPositiveyCheck(item):
+        if qualityPositiveCheck(item):
             if itemNotSulfurasCheck(item):
                 item.quality = decreaseQuality(item)
 
@@ -41,7 +41,7 @@ def update_item(item):
     if sellInNegativeCheck(item):
         if itemNotBrieCheck(item):
             if itemNotBackstagePassCheck(item):
-                if quaityPositiveyCheck(item):
+                if qualityPositiveCheck(item):
                     if itemNotSulfurasCheck(item):
                         item.quality = decreaseQuality(item)
             else:
