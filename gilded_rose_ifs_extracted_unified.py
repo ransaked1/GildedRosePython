@@ -24,7 +24,7 @@ def update_item(item):
     else:
         item.quality = increaseQualityIfLessThanMaxQuality(item)
 
-    if itemIsBackstagePassCheck(item) or qualityNegativeCheck(item):
+    if itemIsBackstagePassCheck(item):
         if sellInLessThan11Check(item):
             item.quality = increaseQualityIfLessThanMaxQuality(item)
         if sellInLessThan6Check(item):
