@@ -1,6 +1,8 @@
 from gilded_rose import *
 
 QUALITY_MAX = 50
+SELLIN_1 = 11
+SELLIN_2 = 6
 
 def increaseQualityIfLessThanMaxQuality(item):
     if qualityLessThanMaxQuality(item):
@@ -45,10 +47,10 @@ def itemNotSulfurasCheck(item):
     return item.name != "Sulfuras, Hand of Ragnaros"
 
 def sellInLessThan11Check(item):
-    return item.sell_in < 11
+    return item.sell_in < SELLIN_1
 
 def sellInLessThan6Check(item):
-    return item.sell_in < 6
+    return item.sell_in < SELLIN_2
 
 def decreaseQuality(item):
     return item.quality - 1
