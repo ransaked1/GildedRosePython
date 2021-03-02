@@ -1,5 +1,5 @@
 # GildedRosePython
-This project is my take on [Gilded Rose](https://github.com/emilybache/GildedRose-Refactoring-Kata) refactoring kata by Emily Bache. You can find a detailed overview of this project in a two part guide on my [blog](https://codenoodles.com/the-basics-of-writing-quality-unit-tests-with-code-katas/). I did it in Python in the least amount of time and detail possible by writing the tests and refactoring only the code order/some logic.<br>
+This project is my take on the [Gilded Rose](https://github.com/emilybache/GildedRose-Refactoring-Kata) refactoring kata by Emily Bache. You can find a detailed overview of this project in a two part guide on my [blog](https://codenoodles.com/the-basics-of-writing-quality-unit-tests-with-code-katas/). I did it in Python in the least amount of time and detail possible by writing the tests and refactoring only the code order/some logic.<br>
 
 These files contain the intermidiate steps in the refactoring process in the following order:<br>
 gilded_rose_extracted.py <br>
