@@ -58,5 +58,5 @@ coverage report -m --include=gilded_rose.py
 ```
 
 ## Built With
-* [Pytest 6.2.2] (https://docs.pytest.org/en/stable)
-* [Coverage 5.4] (https://coverage.readthedocs.io)
+* [Pytest 6.2.2](https://docs.pytest.org/en/stable) - testing library used
+* [Coverage 5.4](https://coverage.readthedocs.io) - code coverage library used
